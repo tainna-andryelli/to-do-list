@@ -1,0 +1,24 @@
+.menu h2,
+.menu p,
+.imagem,
+.menu li {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu p {
+  max-width: 250px;
+}
+
+.menu a {
+  background-color: var(--cor-3);
+  padding: 4px 16px;
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+  color: var(--cor-4);
+}
+
+.menu a:hover {
+  background-color: var(--cor-2);
+  color: var(--cor-0);
+}

@@ -1,0 +1,9 @@
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/global.css";
+
+/* menu */
+@import "./menu/menu.css";
+
+/* lista */
+@import "./lista/lista.css";

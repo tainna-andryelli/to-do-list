@@ -1,0 +1,20 @@
+.font-titulo-1 {
+  font: 700 3rem/1 "Nunito", sans-serif;
+}
+
+.font-titulo-2 {
+  font: 700 2.25rem/1 "Nunito", sans-serif;
+}
+
+.font-texto-1 {
+  font: 400 1.25rem/1 "Lato", sans-serif;
+}
+
+.font-texto-2 {
+  font: 400 1rem/1.33 "Lato", sans-serif;
+}
+
+.font-texto-2-italic {
+  font: 400 1rem/1.33 "Lato", sans-serif;
+  font-style: italic;
+}
