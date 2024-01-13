@@ -4,12 +4,10 @@
 }
 
 body {
-  background-color: var(--cor-4);
+  background-color: var(--cor-5);
   color: var(--cor-0);
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
   box-sizing: border-box;
+  color: var(--cor-1);
 }
 
 a {
@@ -28,6 +26,9 @@ ul {
 }
 
 .conteudo {
-  display: flex;
-  gap: 100px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
 }

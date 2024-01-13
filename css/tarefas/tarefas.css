@@ -1,0 +1,55 @@
+.tarefas-conteudo {
+  background-color: var(--cor-2);
+  padding: 40px 20px 20px 20px;
+  border: 2px solid var(--cor-1);
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.tarefas-conteudo h1 {
+  color: var(--cor-1);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.conteudo-lista {
+  background-color: var(--cor-5);
+  border: 2px solid var(--cor-5);
+  padding: 1px;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.conteudo-lista h3 {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--cor-5);
+}
+
+.conteudo-lista div {
+  background-color: var(--cor-1);
+  border-radius: 4px;
+}
+
+.nova-tarefa {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+  align-items: center;
+}
+
+.nova-tarefa input {
+  width: 200px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 10px solid var(--cor-3);
+}
+
+.nova-tarefa button {
+  background-color: var(--cor-1);
+  border: none;
+  border-radius: 4px;
+  height: max-content;
+}
