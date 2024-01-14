@@ -25,15 +25,16 @@ function novaTarefa() {
 
 function insereTarefa(tarefa, turno) {
   document.getElementById(turno).innerHTML +=
-    "<li>" +
+    "<li><p >" +
     tarefa +
-    "<button class='btn-check' onclick='concluiTarefa(event)'>✔</button></li>";
+    "</p><button class='btn-check' onclick='concluiTarefa(event)'>✔</button></li>";
 }
 
 function concluiTarefa(event) {
   const tarefaConcluida = event.target.parentNode;
+  console.log(tarefaConcluida);
 
-  tarefaConcluida.remove();
+  tarefaConcluida.querySelector("p").style.textDecoration = "line-through";
 }
 
 function mudaTema() {

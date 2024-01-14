@@ -110,6 +110,7 @@
   font-size: 1.5rem;
   cursor: pointer;
   padding: 5px;
+  text-decoration: none !important;
 }
 
 .btn-check:hover {
