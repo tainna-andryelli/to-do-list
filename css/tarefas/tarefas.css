@@ -29,11 +29,11 @@
 
 .conteudo-lista h3 {
   text-align: center;
-  margin: 20px 0 40px 0;
+  margin: 20px 0;
   color: #000c14;
 }
 
-.conteudo-lista div {
+.conteudo-lista > div {
   background-color: var(--cor-1);
   border-radius: 4px;
   padding: 20px 0;
@@ -53,6 +53,15 @@
 
 .tarefas li > div {
   display: flex;
+}
+
+.tarefas ul > p {
+  color: var(--cor-3);
+  opacity: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
 }
 
 .tarefas li:hover {

@@ -5,13 +5,11 @@ function novaTarefa() {
 
   // validações
   if (!inputTarefa.value) {
-    // alert("Digite uma tarefa para ser inserida na lista.");
     const descricao = document.querySelector(".modal p");
     descricao.innerHTML = "Digite uma tarefa para ser inserida na lista.";
 
     mostrarModal();
   } else if (!inputDia.checked && !inputNoite.checked) {
-    // alert("Selecione um turno para sua tarefa.");
     const descricao = document.querySelector(".modal p");
     descricao.innerHTML = "Selecione um turno para sua tarefa.";
 
@@ -36,6 +34,7 @@ function insereTarefa(tarefa, turno) {
     "<li><p>" +
     tarefa +
     "</p><div><button class='btn-check' onclick='concluiTarefa(event)'>✔</button><button class='btn-remove' onclick='removeTarefa(event)'>✖</button></div></li>";
+  document.querySelector("." + turno).style.display = "none";
 }
 
 function concluiTarefa(event) {
@@ -45,7 +44,14 @@ function concluiTarefa(event) {
 
 function removeTarefa(event) {
   const tarefaConcluida = event.target.parentNode.parentNode;
+  const turno = event.target.parentNode.parentNode.parentNode.id;
   tarefaConcluida.remove();
+
+  const element = document.getElementById(turno);
+
+  if (element.childElementCount <= 1) {
+    document.querySelector("." + turno).style.display = "flex";
+  }
 }
 
 function mudaTema() {
