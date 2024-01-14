@@ -41,13 +41,14 @@
 
 .tarefas li {
   color: var(--cor-4);
-  padding: 0 10px;
+  padding: 0 20px;
   display: flex;
   gap: 12px;
   justify-content: space-between;
   align-items: center;
   text-transform: lowercase;
   transition: 0.6s;
+  margin-bottom: 10px;
 }
 
 .tarefas li > div {
@@ -120,4 +121,10 @@
 
 .btn-check:hover {
   color: var(--cor-2);
+}
+
+@media (max-width: 600px) {
+  .conteudo-lista {
+    grid-template-columns: 1fr;
+  }
 }

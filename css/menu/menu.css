@@ -24,3 +24,12 @@
   border: 1px solid var(--cor-4);
   transition: 0.4s;
 }
+
+@media (max-width: 800px) {
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

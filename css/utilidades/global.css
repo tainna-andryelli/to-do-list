@@ -33,3 +33,9 @@ ul {
   margin: 60px auto;
   position: relative;
 }
+
+@media (max-width: 800px) {
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+}
