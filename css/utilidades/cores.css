@@ -1,10 +1,17 @@
 :root {
   --cor-1: #eff9f0;
-  --cor-2: #f3d979;
-  --cor-3: #f5c93d;
-  --cor-4: #f7b801;
-  --cor-5: #0064b0;
-  --cor-6: #005595;
-  --cor-7: #00457a;
-  --cor-8: #000;
+  --cor-2: #0064b0;
+  --cor-3: #005595;
+  --cor-4: #00457a;
+  --cor-5: #000c14;
+  --cor-texto: #eff9f0;
+}
+
+.light-mode:root {
+  --cor-1: #c2e7ff;
+  --cor-2: #0064b0;
+  --cor-3: #005595;
+  --cor-4: #00457a;
+  --cor-5: #33adff;
+  --cor-texto: #000c14;
 }

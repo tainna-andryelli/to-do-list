@@ -11,16 +11,16 @@
 }
 
 .menu a {
-  background: linear-gradient(to bottom, var(--cor-5), var(--cor-7));
+  background: linear-gradient(to bottom, var(--cor-2), var(--cor-4));
   padding: 4px 20px;
-  border: 1px solid var(--cor-5);
+  border: 1px solid var(--cor-2);
   border-radius: 4px;
-  color: var(--cor-0);
+  color: var(--cor-1);
   margin-bottom: 25px;
 }
 
 .menu a:hover {
-  background: linear-gradient(to bottom, var(--cor-6), var(--cor-7));
-  border: 1px solid var(--cor-7);
+  background: linear-gradient(to bottom, var(--cor-3), var(--cor-4));
+  border: 1px solid var(--cor-4);
   transition: 0.4s;
 }
