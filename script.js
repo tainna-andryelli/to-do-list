@@ -5,9 +5,17 @@ function novaTarefa() {
 
   // validações
   if (!inputTarefa.value) {
-    alert("Digite uma tarefa para ser inserida na lista.");
+    // alert("Digite uma tarefa para ser inserida na lista.");
+    const descricao = document.querySelector(".modal p");
+    descricao.innerHTML = "Digite uma tarefa para ser inserida na lista.";
+
+    mostrarModal();
   } else if (!inputDia.checked && !inputNoite.checked) {
-    alert("Selecione um turno para sua tarefa.");
+    // alert("Selecione um turno para sua tarefa.");
+    const descricao = document.querySelector(".modal p");
+    descricao.innerHTML = "Selecione um turno para sua tarefa.";
+
+    mostrarModal();
   } else {
     let tarefa = inputTarefa.value;
 
@@ -50,3 +58,23 @@ function mudaTema() {
 }
 
 mudaTema();
+
+function mostrarModal() {
+  const modal = document.querySelector(".modal-container");
+  modal.style.display = "initial";
+
+  const menu = document.querySelector(".menu");
+  const tarefas = document.querySelector(".tarefas");
+  menu.classList.add("blur");
+  tarefas.classList.add("blur");
+}
+
+function fecharModal() {
+  const modal = document.querySelector(".modal-container");
+  const menu = document.querySelector(".menu");
+  const tarefas = document.querySelector(".tarefas");
+
+  modal.style.display = "none";
+  menu.classList.remove("blur");
+  tarefas.classList.remove("blur");
+}

@@ -1,0 +1,32 @@
+.modal-container {
+  grid-column: 1/-1;
+  position: absolute;
+  align-self: center;
+  width: 100%;
+  display: none;
+}
+
+.modal {
+  margin: 0 auto;
+  width: 40%;
+  padding: 40px;
+  display: grid;
+  justify-items: center;
+  gap: 24px;
+  border-radius: 4px;
+  z-index: 9;
+  border: 2px solid var(--cor-1);
+}
+
+.modal button {
+  padding: 2px 24px;
+  background-color: var(--cor-3);
+  border: none;
+  color: var(--cor-1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.blur {
+  filter: blur(2px);
+}

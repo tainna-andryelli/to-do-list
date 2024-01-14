@@ -31,4 +31,5 @@ ul {
   justify-content: center;
   gap: 60px;
   margin: 60px auto;
+  position: relative;
 }
