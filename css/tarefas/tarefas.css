@@ -75,19 +75,59 @@
   gap: 12px;
 }
 
-.nova-tarefa .turno {
-  display: grid;
-  gap: 12px;
+.nova-tarefa p {
+  margin-bottom: 12px;
 }
 
 .turno > div {
+  width: max-content;
   display: flex;
+  justify-items: center;
   align-items: center;
-  gap: 8px;
+  border: 2px solid var(--cor-4);
+  border-radius: 10px;
+  background-color: #adadad;
 }
 
 .turno > div input {
+  appearance: none;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
   cursor: pointer;
+  position: relative;
+}
+
+.turno > div input:nth-child(1)::before {
+  content: "";
+  background: url("../../assets/sun.svg") no-repeat center center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+
+.turno > div input:nth-child(2)::before {
+  content: "";
+  background: url("../../assets/moon.svg") no-repeat center center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 17px;
+}
+
+.turno > div input:nth-child(1):checked {
+  background-color: #ffd400;
+  border-radius: 8px;
+}
+
+.turno > div input:nth-child(2):checked {
+  background-color: #00253d;
+  border-radius: 8px;
 }
 
 #input-nova-tarefa {
@@ -97,6 +137,7 @@
   border-radius: 4px;
   border: 10px solid var(--cor-3);
   outline: none;
+  margin-bottom: 12px;
 }
 
 #btn-nova-tarefa {
