@@ -6,7 +6,7 @@ Obs.: Clique nas imagens abaixo para melhor qualidade.
 ## 🎈 Layout inicial:
 <img src="https://github.com/tainna-andryelli/to-do-list/assets/76691875/76f1be03-5cd4-4499-a8ca-0e9ee67c4169" width="472" height="295"/>
 
-## 👀 Pré-visualização:
+## 👀 Pré-visualização do projeto final:
 ![Captura de tela 2024-01-14 221353](https://github.com/tainna-andryelli/to-do-list/assets/76691875/7c2d4705-489e-41e0-9e9c-32b8f693a824)
 
 ## ✔ Funcionalidades Relevantes:
